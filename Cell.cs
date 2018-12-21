@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CST227Milestone1
+namespace CST227MilestoneProject
 {
     class Cell
     {
@@ -14,6 +14,6 @@ namespace CST227Milestone1
         public bool live { get; set; } = false;
         public int liveneighbors { get; set; } = 0;
 
-        public Cell() {}        
+        public Cell() { }
     }
 }

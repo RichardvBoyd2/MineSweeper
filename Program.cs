@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CST227Milestone1
+namespace CST227MilestoneProject
 {
     class Program
     {
@@ -13,18 +13,17 @@ namespace CST227Milestone1
             bool success = false;
             while (success == false)
             {
+                Console.Clear();
                 Console.WriteLine("Enter an integer to determine the size of each side of the square:");
                 if (Int32.TryParse(Console.ReadLine(), out int size))
                 {
                     success = true;
-                    Board board = new Board(size);
-                    board.Activate();
-                    board.NeighborCount();
+                    MinesweeperGame game = new MinesweeperGame(size);
+                    Console.Clear();
                     Console.WriteLine();
-                    Console.WriteLine("Here is your " + size + " X " + size + " game board");
-                    board.Display();
+                    game.PlayGame();
                     Console.WriteLine();
-                    Console.WriteLine("Enter 'Y' to make another, or hit enter to exit");
+                    Console.WriteLine("Enter 'Y' to play again, or hit enter to exit");
                     string again = Console.ReadLine();
                     if (again == "Y" || again == "y")
                     {
@@ -34,8 +33,8 @@ namespace CST227Milestone1
                 else
                 {
                     Console.WriteLine("Could not recognize input as an integer.");
-                }                
-            }            
+                }
+            }
         }
     }
 }

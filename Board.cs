@@ -4,19 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CST227Milestone1
+namespace CST227MilestoneProject
 {
-    class Board
+    abstract class Board
     {
-        int size;
-        Cell[,] game;
+        public int size;
+        public Cell[,] game;
         Random Random = new Random();
 
         //creates square grid with entered parameter and creates cells for each space
         public Board(int size)
-        {            
+        {
             this.size = size;
-            game = new Cell[size, size];            
+            game = new Cell[size, size];
             for (int i = 0; i < size; i++)
             {
                 for (int j = 0; j < size; j++)
@@ -72,10 +72,6 @@ namespace CST227Milestone1
                             }
                             if (i + 1 < size)
                             {
-                                if (game[j, i + 1].live == true)
-                                {
-                                    count++;
-                                }
                                 if (game[j + 1, i + 1].live == true)
                                 {
                                     count++;
@@ -87,6 +83,13 @@ namespace CST227Milestone1
                                 {
                                     count++;
                                 }
+                            }
+                        }
+                        if (i + 1 < size)
+                        {
+                            if (game[j, i + 1].live == true)
+                            {
+                                count++;
                             }
                         }
                         if (j > 0)
@@ -104,14 +107,17 @@ namespace CST227Milestone1
                             }
                             if (i > 0)
                             {
-                                if (game[j, i - 1].live == true)
-                                {
-                                    count++;
-                                }
                                 if (game[j - 1, i - 1].live == true)
                                 {
                                     count++;
                                 }
+                            }
+                        }
+                        if (i > 0)
+                        {
+                            if (game[j, i - 1].live == true)
+                            {
+                                count++;
                             }
                         }
                         game[j, i].liveneighbors = count;
@@ -121,8 +127,8 @@ namespace CST227Milestone1
         }
 
         //displays board to the console
-        public void Display()
-        {            
+        public virtual void Display()
+        {
             Console.WriteLine();
             for (int i = 0; i < size; i++)
             {
@@ -130,15 +136,19 @@ namespace CST227Milestone1
                 {
                     if (game[j, i].live)
                     {
-                        Console.Write("* ");
+                        Console.Write(" *");
+                    }
+                    else if (game[j, i].liveneighbors == 0)
+                    {
+                        Console.Write(" ~");
                     }
                     else
                     {
-                        Console.Write(game[j, i].liveneighbors + " ");
-                    }                    
+                        Console.Write(" " + game[j, i].liveneighbors);
+                    }
                 }
                 Console.WriteLine();
-            }            
+            }
         }
     }
 }
