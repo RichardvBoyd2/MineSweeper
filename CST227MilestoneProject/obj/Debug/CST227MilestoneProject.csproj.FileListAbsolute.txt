@@ -1,0 +1,7 @@
+C:\Users\Rick\source\repos\CST227MilestoneProject\CST227MilestoneProject\bin\Debug\CST227MilestoneProject.exe.config
+C:\Users\Rick\source\repos\CST227MilestoneProject\CST227MilestoneProject\bin\Debug\CST227MilestoneProject.exe
+C:\Users\Rick\source\repos\CST227MilestoneProject\CST227MilestoneProject\bin\Debug\CST227MilestoneProject.pdb
+C:\Users\Rick\source\repos\CST227MilestoneProject\CST227MilestoneProject\obj\Debug\CST227MilestoneProject.csprojAssemblyReference.cache
+C:\Users\Rick\source\repos\CST227MilestoneProject\CST227MilestoneProject\obj\Debug\CST227MilestoneProject.csproj.CoreCompileInputs.cache
+C:\Users\Rick\source\repos\CST227MilestoneProject\CST227MilestoneProject\obj\Debug\CST227MilestoneProject.exe
+C:\Users\Rick\source\repos\CST227MilestoneProject\CST227MilestoneProject\obj\Debug\CST227MilestoneProject.pdb
