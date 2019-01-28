@@ -47,12 +47,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Grid.cs" />
+    <Compile Include="IPlayable.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="MinesweeperGame.cs" />
     <Compile Include="NewGame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +81,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="bin\Debug\MineSweeper.exe.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -91,6 +94,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="Properties\Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\MineSweeper.exe" />
+    <Content Include="bin\Debug\MineSweeper.pdb" />
+    <Content Include="bin\Debug\Icons\0.png" />
+    <Content Include="bin\Debug\Icons\1.png" />
+    <Content Include="bin\Debug\Icons\2.png" />
+    <Content Include="bin\Debug\Icons\3.png" />
+    <Content Include="bin\Debug\Icons\4.png" />
+    <Content Include="bin\Debug\Icons\5.png" />
+    <Content Include="bin\Debug\Icons\6.png" />
+    <Content Include="bin\Debug\Icons\7.png" />
+    <Content Include="bin\Debug\Icons\8.png" />
+    <Content Include="bin\Debug\Icons\flag.png" />
+    <Content Include="bin\Debug\Icons\lose.png" />
+    <Content Include="bin\Debug\Icons\mine2.ico" />
+    <Content Include="bin\Debug\Icons\unexplored.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

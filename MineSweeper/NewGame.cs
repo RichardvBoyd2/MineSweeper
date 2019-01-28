@@ -15,12 +15,7 @@ namespace MineSweeper
         public NewGame()
         {
             InitializeComponent();
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+        }      
 
         //creates a game board according to the difficulty selected
         private void button1_Click(object sender, EventArgs e)
@@ -41,7 +36,7 @@ namespace MineSweeper
             //hides this form and opens the game, also sets this form to close when the game form is closed
             this.Hide();
             Main main = new Main(size);
-            main.FormClosed += (s, args) => this.Close();
+            main.FormClosed += (s, args) => this.Show();
             main.Show();            
         }
     }

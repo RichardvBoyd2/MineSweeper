@@ -1,4 +1,6 @@
-﻿namespace MineSweeper
+﻿using System.Drawing;
+
+namespace MineSweeper
 {
     partial class NewGame
     {
@@ -47,7 +49,7 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(97, 96);
             this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
+            this.groupBox1.TabStop = false;            
             // 
             // radioButton3
             // 
@@ -58,8 +60,7 @@
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Hard";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            this.radioButton3.UseVisualStyleBackColor = true;            
             // 
             // radioButton2
             // 
