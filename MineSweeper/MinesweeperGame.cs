@@ -12,7 +12,7 @@ namespace MineSweeper
     class MinesweeperGame : Grid, IPlayable
     {
         int size = 0;
-        public bool gameover = false;
+        public bool gameover = false, win = false;
         public string message, caption;
 
         public MinesweeperGame(int size) : base(size)
@@ -40,8 +40,7 @@ namespace MineSweeper
             else if (grid[x,y].liveneighbors == 0)
             {
                 RecursiveTest(x, y);
-            }
-            //TODO add win test and code
+            }            
             RefreshGame();
         }
 
@@ -49,10 +48,9 @@ namespace MineSweeper
         public void RefreshGame()
         {
             if (Win(grid))
-            {
-                caption = "Congratulations!";
-                message = "You won!";
+            {                
                 gameover = true;
+                win = true;
             }
             if (gameover == true)
             {

@@ -119,6 +119,7 @@ namespace MineSweeper
             this.Name = "NewGame";
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Text = "New Game";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

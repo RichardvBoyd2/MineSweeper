@@ -15,9 +15,21 @@ namespace MineSweeper
     {
         MinesweeperGame minesweeperGame;
         int sec, min, hour;
-        String time;
+        string time, level;
         public Main(int size)
         {
+            if (size == 10)
+            {
+                level = "Easy";
+            }
+            if (size == 15)
+            {
+                level = "Normal";
+            }
+            if (size == 20)
+            {
+                level = "Hard";
+            }
             minesweeperGame = new MinesweeperGame(size);
             InitializeComponent(size, minesweeperGame);
         }        
@@ -33,12 +45,24 @@ namespace MineSweeper
                 //ends the game, displays the time and the appropriate response if the player won or lost
                 if (minesweeperGame.gameover == true)
                 {
-                    time = "Time: " + hours.Text + minutes.Text + seconds.Text;
-                    DialogResult result = MessageBox.Show(time + "\n" + minesweeperGame.message, minesweeperGame.caption);
-                    if (result == DialogResult.OK)
+                    if (minesweeperGame.win == true)
                     {
-                        this.Close();
+                        this.Enabled = false;
+                        int totaltime = sec + (min * 60) + (hour * 3600);
+                        EnterName enterName = new EnterName(totaltime, level);
+                        enterName.FormClosed += (s, args) => this.Close();
+                        enterName.Show();
                     }
+                    else
+                    {
+                        this.Enabled = false;
+                        HighScores highScores = new HighScores(level);
+                        highScores.FormClosed += (s, args) => this.Close();
+                        highScores.Show();
+                    }
+
+
+
                 }
             }
             if (e.Button == MouseButtons.Right)

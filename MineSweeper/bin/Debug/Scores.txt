@@ -1,0 +1,17 @@
+RVB Easy 86
+RVB Normal 125
+RVB Hard 251
+RVB Hard 263
+RVB Normal 140
+RVB Hard 278
+RVB Normal 127
+RVB Hard 284
+RVB Hard 240
+RVB Normal 131
+RVB Normal 103
+RVB Easy 63
+RVB Easy 35
+RVB Easy 100
+RVB Easy 50
+RVB Easy 49
+RVB Easy 89
