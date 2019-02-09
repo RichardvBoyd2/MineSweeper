@@ -11,3 +11,16 @@ C:\Users\Rick\source\repos\MineSweeper\MineSweeper\obj\Debug\MineSweeper.pdb
 C:\Users\Rick\source\repos\MineSweeper\MineSweeper\obj\Debug\MineSweeper.Main.resources
 C:\Users\Rick\source\repos\MineSweeper\MineSweeper\obj\Debug\MineSweeper.HighScores.resources
 C:\Users\Rick\source\repos\MineSweeper\MineSweeper\obj\Debug\MineSweeper.EnterName.resources
+C:\Users\Rick\Documents\CST-227\Milestone 7\MineSweeper\bin\Debug\MineSweeper.exe.config
+C:\Users\Rick\Documents\CST-227\Milestone 7\MineSweeper\bin\Debug\MineSweeper.exe
+C:\Users\Rick\Documents\CST-227\Milestone 7\MineSweeper\bin\Debug\MineSweeper.pdb
+C:\Users\Rick\Documents\CST-227\Milestone 7\MineSweeper\obj\Debug\MineSweeper.csprojAssemblyReference.cache
+C:\Users\Rick\Documents\CST-227\Milestone 7\MineSweeper\obj\Debug\MineSweeper.EnterName.resources
+C:\Users\Rick\Documents\CST-227\Milestone 7\MineSweeper\obj\Debug\MineSweeper.HighScores.resources
+C:\Users\Rick\Documents\CST-227\Milestone 7\MineSweeper\obj\Debug\MineSweeper.Main.resources
+C:\Users\Rick\Documents\CST-227\Milestone 7\MineSweeper\obj\Debug\MineSweeper.NewGame.resources
+C:\Users\Rick\Documents\CST-227\Milestone 7\MineSweeper\obj\Debug\MineSweeper.Properties.Resources.resources
+C:\Users\Rick\Documents\CST-227\Milestone 7\MineSweeper\obj\Debug\MineSweeper.csproj.GenerateResource.cache
+C:\Users\Rick\Documents\CST-227\Milestone 7\MineSweeper\obj\Debug\MineSweeper.csproj.CoreCompileInputs.cache
+C:\Users\Rick\Documents\CST-227\Milestone 7\MineSweeper\obj\Debug\MineSweeper.exe
+C:\Users\Rick\Documents\CST-227\Milestone 7\MineSweeper\obj\Debug\MineSweeper.pdb
